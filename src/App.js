@@ -1,10 +1,16 @@
 import './App.css';
-import LikeButton from "./component/LikeButton";
+import ClickablePicture from "./component/ClickablePicture";
+
+import maxence from "./assets/images/maxence.png";
+import maxenceGlasses from "./assets/images/maxence-glasses.png";
 
 function App() {
   return (
     <div className="App">
-        <LikeButton />
+        <ClickablePicture
+  img={maxence}
+  imgClicked={maxenceGlasses}
+/>
     </div>
   );
 }
