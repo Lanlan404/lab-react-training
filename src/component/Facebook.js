@@ -3,6 +3,7 @@ import profiles from '../data/berlin.json';
 import Profile from './Profile';
 
 function Facebook() {
+    // The country to be highlighted (as selected by the user clicking on countries buttons) is stored in the global component state
     const [countryHighlight, setCountryHighlight] = useState("");
 
     const styles = {
@@ -31,6 +32,7 @@ function Facebook() {
     // Extracting the list of countries from "profiles" data
     const countries = profiles.reduce((countries, user) => countries.includes(user.country) ? countries : [...countries, user.country], []);
 
+    // Callback function provided to <Profile /> components
     function highlight(country) {
         setCountryHighlight(country);
     }
@@ -47,7 +49,7 @@ function Facebook() {
                                             img={profile.img}
                                             country={profile.country}
                                             isStudent={profile.isStudent}
-                                            highlight={profile.country === countryHighlight}
+                                            highlight={profile.country === countryHighlight} // Boolean telling to <Profile /> component if it should be highlighted or not
                                             />)}
             </div>
         </div>
