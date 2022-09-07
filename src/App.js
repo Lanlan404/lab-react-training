@@ -1,10 +1,10 @@
 import './App.css';
-import Facebook from './component/Facebook';
+import SignupPage from './component/SignupPage';
 
 function App() {
   return (
     <div className="App">
-        <Facebook />
+        <SignupPage />
     </div>
   );
 }
