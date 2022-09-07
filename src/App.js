@@ -1,17 +1,10 @@
 import './App.css';
-import Carousel from "./component/Carousel";
+import NumbersTable from './component/NumbersTable';
 
 function App() {
   return (
     <div className="App">
-        <Carousel
-  images={[
-    'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
-  ]}
-/>
+        <NumbersTable limit={24} />
     </div>
   );
 }
