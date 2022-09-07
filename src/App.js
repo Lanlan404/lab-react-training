@@ -1,10 +1,10 @@
 import './App.css';
-import SignupPage from './component/SignupPage';
+import RGBColorPicker from './component/RGBColorPicker';
 
 function App() {
   return (
     <div className="App">
-        <SignupPage />
+        <RGBColorPicker />
     </div>
   );
 }

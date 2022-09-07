@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function SignupPage(props){
+function SignupPage(){
     const [email, setEmail]                 = useState("");
     const [password, setPassword]           = useState("");
     const [emailStyle, setEmailStyle]       = useState({ border: "none", height: 30, width: "100%", borderRadius: 3, outline: "1px solid black" });
